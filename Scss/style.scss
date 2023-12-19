@@ -1,0 +1,236 @@
+$Orange-Primary: #e87a14;
+$Black: #000;
+$White-Colour: #fff;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", "sans-serif";
+}
+
+.first-body {
+  height: 100vh;
+  background-color: rgb(228, 226, 226);
+  padding: auto;
+}
+
+// NAV DESIGN
+.class-container {
+  width: 100%;
+  height: 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .links {
+    display: flex;
+    gap: 2rem;
+  }
+  .btn-container {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  .logo {
+    color: #000;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: $Black;
+      font-family: Poppins;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      color: $Orange-Primary;
+    }
+  }
+  .login {
+    text-decoration: none;
+    color: $Black;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .login:hover {
+    color: $Orange-Primary;
+  }
+
+  .btn {
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    background-color: $Orange-Primary;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 1.57rem;
+    transition: all 0.3s ease;
+    a {
+      color: $White-Colour;
+      text-decoration: none;
+    }
+  }
+  .btn:hover {
+    transform: scale(0.9);
+  }
+}
+
+// HOME DESIGN
+.body-container {
+  // width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12rem;
+  align-items: center;
+  //justify-content: space-between;
+  //margin-right: 10rem;
+  width: 98.4375rem;
+  height: 49rem;
+  // flex-shrink: 0;
+  div {
+    h3 {
+      color: rgba(68, 195, 235, 0.8);
+      font-family: Poppins;
+      font-size: 1.875rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 2rem;
+      color: $Black;
+      font-family: Poppins;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.3rem;
+    }
+    button {
+      width: 12.0625rem;
+      height: 4.75rem;
+      flex-shrink: 0;
+      border-radius: 1.25rem;
+      border: none;
+      margin-top: 3rem;
+      background: $Orange-Primary;
+      color: $White-Colour;
+      font-size: 1.5rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(0.9);
+    }
+  }
+  .home-img {
+    width: 39.1875rem;
+    height: 48.91863rem;
+    flex-shrink: 0;
+    margin-top: 5rem;
+  }
+}
+
+//SIGN UP PAGE DESIGNS
+
+.second {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(100deg, $Orange-Primary, #7e0d01);
+  background-size: 100% 20%;
+}
+.section {
+  height: 100vh;
+  position: relative;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  .social-container {
+    width: 36.25rem;
+    height: 52.875rem;
+    background-color: $White-Colour;
+
+    .Heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      gap: 1.5rem;
+
+      h4 {
+        color: $Black;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .paragraph-one {
+        color: #666;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    .social-links-container {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      gap: 1.5rem;
+      .social-links {
+        display: flex;
+        width: 25.125rem;
+        height: 4.5rem;
+        padding: 1.28125rem 3.5rem 1.21875rem 3.5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.5rem;
+        border: 1px solid #333;
+        background: #fff;
+        gap: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .second-image {
+    width: 36.25rem;
+    height: 52.875rem;
+    flex-shrink: 0;
+  }
+}
